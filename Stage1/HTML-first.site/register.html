@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta lang="en">
+	<title>Register</title>
+</head>
+<body>
+	<form action="#"><!-- action="#" ; method="GET/POST" -? -->
+		<div>
+			<label for="First name">First name:</label>
+			<input type="text" name="firstname">
+		</div> 
+		<div>
+			Last name: <input type="text" name="lastname">
+		</div>
+		<div>
+			Email: <input type="email" name="email" required>
+		</div>
+		<div>
+			Password: <input type="password" name="password" minlength="8">
+		</div>
+		<div>
+			Birthday: <input type="date" name="birthday">
+		</div>
+		<div>
+			Gender:<br>
+			<input type="radio" name="gender" value="male">Male<br>
+			<input type="radio" name="gender" value="female">Female<br>
+			<input type="radio" name="gender" value="other">Other<br>
+		</div>
+		<div>
+			Pets:<br>
+			<input type="checkbox"  name="cat"checked> Cat <br>
+			<input type="checkbox" name="dog"> Dogs <br>
+		</div>
+		<div>
+			Cars:<br>
+			<select name="car">
+				<option value="Volvo" name="volvo" selected> Volvo </option>
+				<option value="Audi" name="audi"> Audi </option>
+			</select>
+		</div>
+		<div>
+			<input type="submit" value="Register!">
+		</div>
+		<div>
+			<input type="reset" value="Reset">
+		</div>
+		<div>
+			<textarea rows="5" cols="20">A big load of text</textarea>
+		</div>
+	</form>
+
+
+
+	<!-- EXAMPLE FROM DI LEARNING-->
+	<form action="#">
+    <div>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username">
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password">
+    </div>
+    <div>
+        <label>Favorite Instructor</label>
+
+        <label for="elie">Elie</label>
+        <input type="radio" name="favorite_instructor" id="elie" value="elie">
+        <label for="matt">Matt</label>
+        <input type="radio" name="favorite_instructor" id="matt" value="matt" checked>
+        <label for="tim">Tim</label>
+        <input type="radio" name="favorite_instructor" id="tim" value="tim">
+    </div>
+    <div>
+        <label>Where do you live</label>
+
+        <select name="city">
+            <option value="Paris">Paris</option>
+            <option value="NY">New York</option>
+            <option value="TLV" selected>Tel Aviv</option>
+        </select>
+    </div>
+    <div>
+        <label>Favorite Programming Language(s)</label>
+
+        <label for="ruby">Ruby</label>
+        <input type="checkbox" name="favorite_language1" value="Ruby" id="ruby">
+        <label for="javascript">JavaScript</label>
+        <input type="checkbox" name="favorite_language2" value="JavaScript" id="javascript">
+        <label for="python">Python</label>
+        <input type="checkbox" name="favorite_language3" value="Python" id="python">
+    </div>
+    <div>
+        <label>Additional Comments</label>
+        <textarea name="comments" id="com" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+        <input type="submit" value="click to submit">
+    </div>
+</form>
+<a href="index.html">
+        <h2>Go Back</h2>
+    </a>
+</body>
+</html>
