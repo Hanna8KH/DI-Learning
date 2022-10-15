@@ -1,0 +1,71 @@
+body {
+    font-family: Helvetica;
+    margin: 0px;
+    background:rgb(227, 227, 227);}
+
+.back_img {
+    background-image: url(back.jpg);
+    width: 100%;
+    background-position: center ; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    display: flex; 
+    justify-content:space-between;
+    align-items: center;
+
+    color: rgb(110, 112, 112);
+    /* height: 40px; */
+    padding: 0px 100px 0px 100px;
+}
+
+.button {
+background-color: rgb(79, 143, 232);
+border: none;
+border-radius: 3px;
+color: white;
+padding: 10px 20px;
+text-align: center;
+cursor: pointer;
+
+}
+
+.button:hover {
+    background-color: #a6c5ca75;
+    color: rgb(65, 90, 125);
+}
+
+.container {
+    padding: 170px 340px;
+    color: #e8e9ea;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+}
+#email {
+    color: #2b30319e;
+    width: 200px;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+}
+
+i {
+    font-size: 50px;
+    color: #0e5b81;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+}
+footer > div {
+    text-align: center;
+    width: 250px;
+    margin: 15px;
+}
+div > p {
+    color: #565656bb;
+}
