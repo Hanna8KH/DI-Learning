@@ -1,0 +1,35 @@
+.parent {
+    display: flex;
+    border: 1px solid red;
+    padding: 5px;
+    height: 300px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.parent > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.one {
+    background-color: rgb(102, 185, 185);
+    width: 100%;
+    height: 50px;
+}
+
+.two {
+    background-color: rgb(102, 185, 185);
+    width: 50%;
+    height: 100px; 
+}
+.three {
+    background-color: rgb(102, 185, 185);
+    width: 100%;
+    height: 50px;
+}

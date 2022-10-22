@@ -1,0 +1,32 @@
+
+
+.parent {
+    padding: 10px 5px;
+    display: flex;
+    border: 1px solid red;
+    height: 50px;
+    flex-direction: row;
+    flex-grow: 7;
+}
+
+.parent > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.one {
+    background-color: rgb(128, 60, 128);
+    flex: 1;
+}
+.two {
+    background-color: rgb(137, 137, 195);
+    flex: 3;
+}
+.three {
+    background-color: rgb(165, 55, 55);
+    flex: 3;
+}

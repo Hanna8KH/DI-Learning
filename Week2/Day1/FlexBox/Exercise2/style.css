@@ -1,0 +1,27 @@
+
+
+.parent {
+    margin: 20px auto;
+    display: flex;
+    border: 1px solid red;
+    height: 400px;
+    width: 800px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.parent > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    margin: 5px;
+    background-color: rgb(102, 185, 185);
+    color: aliceblue;
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.two {
+    width: 25%;
+    align-self: flex-end;
+}

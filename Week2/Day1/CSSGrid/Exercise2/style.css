@@ -1,0 +1,54 @@
+.parent {
+    display: grid;
+    grid-template-rows: repeat(13, 1fr);
+    grid-template-columns: repeat(14, 1fr);
+    /* width: 50%; */
+    margin: 0 auto;
+    grid-gap: 5px 2px;
+    color: aliceblue;
+    text-align: center;
+    font-size: larger;
+}
+
+header {
+    background-color: rgb(103, 144, 190);
+    grid-template-rows: 1/ 2;
+    grid-column: 1/ 15;
+}
+
+.hero {
+    background-color: rgb(155, 95, 160);
+    grid-row: 2/ 6;
+    grid-column: 1/ 7;
+}
+
+.main {
+    background-color: rgb(225, 199, 94);
+    grid-row: 2/ 8;
+    grid-column: 7/ 15;
+}
+.sidebar {
+    background-color: rgb(85, 142, 93);
+    grid-row: 6/ 11;
+    grid-column: 1/ 7;
+}
+.extra {
+    background-color: rgb(73, 66, 73);
+    grid-row: 8/ 11;
+    grid-column: 7/ 15;
+}
+.related {
+    background-color: rgb(101, 222, 157);
+    grid-row: 11/ 13;
+    grid-column: 1/ 11;
+}
+.related_posts {
+    background-color: rgb(185, 71, 181);
+    grid-row: 11/ 13;
+    grid-column: 11/ 15;
+}
+footer {
+    background-color: rgb(194, 122, 68);
+    grid-row: 13/ 14;
+    grid-column: 1/ 15;
+}

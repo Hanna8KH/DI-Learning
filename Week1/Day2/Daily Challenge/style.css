@@ -44,10 +44,11 @@ ul {
 
 
 section {
-    padding: 50px 0;
+    padding: 50px 30px;
 }
 section > div {
-    margin: 30px 600px 0 30px;
+    max-width: max(70%, 500px);
+    margin-top: 30px;
 }
 .back_thor {
     background-image: url("back.jpg") ;
