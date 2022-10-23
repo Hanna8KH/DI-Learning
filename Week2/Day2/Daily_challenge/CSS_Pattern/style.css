@@ -1,0 +1,19 @@
+.parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.box {
+    border: 1px solid black;
+    background-color: yellow;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+}
+.two {
+    display: flex;
+    align-self: center;
+}
+.two > div {
+    margin: 20px;
+}

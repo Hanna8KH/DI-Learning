@@ -1,0 +1,35 @@
+.repeat {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* display: inline-grid; */
+    /* width: fit-content; */
+    /* grid-template-rows: subgrid; */
+    /* grid-template-columns: subgrid; */
+}
+.repeat > div {
+    /* grid-row: 1/ 2; */
+    /* grid-column: 1/ 2; */
+}
+.item-a {
+    /* grid-area: a; */
+}
+.parent {
+    display: grid;
+    grid-template-rows: 50px 50px 50px;
+    grid-template-columns: 50px 50px 50px;
+    width: fit-content;
+    margin: 2px;
+    /* padding: 5px; */
+    grid-gap: 4px 4px;
+}
+.orange {
+    background-color: rgb(255, 149, 0);
+}
+.light {
+    background-color: rgb(245, 189, 104);
+}
+.dark {
+    background-color: rgb(147, 63, 18);
+}

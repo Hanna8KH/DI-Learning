@@ -1,0 +1,117 @@
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    margin: 0px;
+
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+
+}
+ header > div {
+    width: 60px;
+ }
+i {
+    color: aliceblue;
+}
+.reverse {transform: rotate(180deg);}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: aliceblue;
+  }
+  
+  li {
+    float: right;
+    color: white;
+    padding: 14px 16px;
+    text-transform: uppercase;
+  }
+  li:hover {
+    background-color: rgba(110, 110, 110, 0.582);
+  }
+
+
+
+section {
+    padding: 50px 30px;
+}
+section > div {
+    max-width: max(70%, 500px);
+    margin-top: 30px;
+}
+.back_thor {
+    background-image: url("back.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 35px;
+    background-color: hsl(0, 0%, 0%);
+
+}
+footer > a {
+    padding: 15px;
+    margin: 0;
+    color: aliceblue;
+    border: 1px rgba(255, 255, 255, 0.512) solid ;
+    border-radius: 25px;
+}
+
+
+@media all and (min-width: 1200px) and (max-width: 1280px) {
+    header {
+        background-color: black;
+        color: aliceblue;
+    }
+ }
+
+@media all and (min-width: 992px) and (max-width: 1200px) { 
+    header {
+        background-color: red;
+        color: aliceblue;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 992px) { 
+    header {
+        background-color: rgb(114, 232, 85);
+        color: rgb(0, 0, 0);
+    }
+    h1 {
+        font-size: 25px;
+    }
+}
+@media all and (min-width: 600px) and (max-width: 768px) { 
+    header {
+        background-color: rgb(232, 215, 85);
+        color: rgb(0, 0, 0);
+    }
+    h1 {
+        font-size: 35px;
+    }
+}
+
+
+
+
