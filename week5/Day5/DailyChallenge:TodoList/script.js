@@ -1,38 +1,38 @@
-let todoList = document.getElementById('todo-list')
+const tasks = [];
+const form = document.getElementById('form');
+const ul = document.getElementById('liTask');
+form.addEventListener("submit", handleSubmit);
+// addTask()
 
+function handleSubmit (event) {
+    event.preventDefault();
+    const formData = new FormData(form);
+    const task = formData.get('task');
+    if (task === '') return;
+    tasks.push(task);
+    renderTasks (task)
+    form.reset();
+}
+function renderTasks () {
+    ul.innerHTML = '';
+    for (const task of tasks) {
+        const li = createLi(task);
+        ul.append(li);
+    } 
+}
 
-function addTodo(){
-    let newToDo = document.getElementById('todotodo').value;
-    let newTodoDiv = document.createElement('div');
-    todoList.appendChild(newTodoDiv);
-    newTodoDiv.setAttribute('class', 'todo-item');
-    let xIcon = document.createElement('div');
-    let xText = document.createTextNode('x');
-    xIcon.setAttribute('onclick', 'deleteTask(event)');
-    xIcon.appendChild(xText);
-    xIcon.style.cursor = 'pointer';
-    newTodoDiv.appendChild(xIcon);
-    let selectSquare = document.createElement('input');
-    selectSquare.setAttribute('type', 'checkbox');
-    selectSquare.setAttribute('onchange', 'selected(event)')
-    newTodoDiv.appendChild(selectSquare);
-    let todoText = document.createElement('p');
-    let todoTextInside = document.createTextNode(newToDo);
-    todoText.appendChild(todoTextInside);
-    newTodoDiv.appendChild(todoText); 
+function createLi(task) {
+    const li = document.createElement('li');
+    const deleteMark = document.createElement('i');
+    deleteMark.classList.add('fa-solid', 'fa-xmark');
+    const checkBox = document.createElement('input');
+    checkBox.setAttribute('type', 'checkbox');
+    const span = document.createElement('lable');
+    span.innerText = task;
+
+    li.append(deleteMark);
+    li.append(checkBox);
+    li.append(span);
     
-}
-
-function deleteTask(event) {
-    todoList.removeChild(event.target.parentElement);
-}
-
-function selected(event) {
-    let styleType = event.target.nextElementSibling.style.textDecoration;
-    let target = event.target.nextElementSibling;
-    if (styleType == '' || styleType == 'none'){
-        target.style.textDecoration = 'line-through';
-    } else {
-        target.style.textDecoration = 'none';
-    }
+    return li;
 }
