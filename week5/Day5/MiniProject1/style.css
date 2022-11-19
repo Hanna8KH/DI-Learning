@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+#container {
+    border: 2px solid rgb(0, 0, 0);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    background-color: rgb(154, 156, 158);
+    padding: 0,5rem;
+}
+#container > * {
+    border: 2px solid rgb(154, 156, 158);
+}
+#sidebar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(6 1fr); // change
+    padding-inline: 0.5rem;
+}
+
+#sidebar > * {
+    /* border: 2px solid rgb(20, 99, 179); */
+    gap: 0.5rem;
+    cursor:  pointer;
+}
+#sidebar .clear {
+    grid-column: 1 / -1;
+    padding: 0.5rem;
+}
+
+#sidebar .clear button{
+    border-radius: 0.5rem;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+#sidebar .color {
+    background-color: aliceblue;
+    border: 1px solid black;
+    margin: 0.1rem;
+
+}
+
+#main {
+    display: grid;
+    grid-template-rows: repeat(50, 1fr);
+    grid-template-columns: repeat(50, 1fr);
+}
+
+#main > * {
+    border: 1px solid rgb(154, 156, 158);
+    box-sizing: border-box;
+    background-color: white;
+}
