@@ -1,0 +1,12 @@
+form {
+    justify-content: center;
+};
+
+form > * {
+    padding: 1rem;
+    border-radius: 1rem;
+};
+
+#button {
+    margin: 2rem ;
+}
